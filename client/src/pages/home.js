@@ -1,15 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
+import {Col, Container, Row} from "../components/Grid"
 
-import {
-  Container,
-} from "reactstrap";
 
-class Home extends React.Component {
+class Home extends Component {
+
+
   render() {
     return (
 
-          <Container >
-              
+          <Container>
+            <Row>
+              <Col size="md-6"></Col>
+            </Row>
           </Container>
 
     );
