@@ -5,12 +5,14 @@ var Schema = mongoose.Schema;
 
 // Using the Schema constructor, create a new DryPortalSchema object
 var DryPortalSchema = new Schema({
-  Clouths: {
-    type: String,
-    required: "Title is Required"
+  clouths: {
+    type: String
   },
   date: {
     type: Date
+  },
+  orders:{
+    type: String
   }
 });
 

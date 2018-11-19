@@ -52,6 +52,7 @@ class LoginForm extends Component {
       });
   }
 
+<<<<<<< HEAD
   render() {
     if (this.state.redirectTo) {
       return <Redirect to={{ pathname: this.state.redirectTo }} />;
@@ -104,6 +105,33 @@ class LoginForm extends Component {
           </form>
         </div>
       );
+=======
+            <Container>
+                <Row>
+                    <Col size="md-6">
+                        <Input
+                            value={this.state.username}
+                            onChange={this.handleInputChange}
+                            name="username"
+                            placeholder="Username"
+                        />
+                        <Input
+                            value={this.state.password}
+                            onChange={this.handleInputChange}
+                            name="password"
+                            placeholder="Password"
+                        />
+                        <FormBtn
+                            disabled={!(this.state.username && this.state.password)}
+                            onClick={this.handleFormSubmit}
+                        >
+                            Login
+                        </FormBtn>
+                    </Col>
+                </Row>
+            </Container>
+        );
+>>>>>>> abc65be86bfaa9d8282704f7de871c7f7f1fd41f
     }
   }
 }
