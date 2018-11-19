@@ -15,8 +15,8 @@ class Navigation extends React.Component {
     return (
         <Navbar color="white" light expand="md">
           <Container >
-          <img src={hanger} alt="logo" style={{ width: 50, height: 27, cursor: 'pointer' }}/>
-            <NavbarBrand href="/">DRY Portal</NavbarBrand>
+          
+            <NavbarBrand href="/"><img src={hanger} alt="logo" style={{ width: 50, height: 27, cursor: 'pointer' }}/> DRY Portal</NavbarBrand>
               <Nav className="ml-auto" navbar>
                 <NavItem>
                   <NavLink href="/login"><Button outline color="secondary">Login</Button>{' '}</NavLink>
