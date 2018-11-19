@@ -16,13 +16,12 @@ const App = () => (
   
       <BrowserRouter>
         <div>
-        <Navigation/>
         <Switch>
           <Route exact path="/" component={ Home }/>
           <Route exact path="/login" component = { Login } />
           <Route exact path="/signup" component = { Signup } />
           <Route exact path="/createorder" component = { Createorder } />
-          <Route exact path="/userdash" component = { Userdash } />
+          <Route exact path="/dashboard" component = { Userdash } />
         </Switch>
         </div>
       </BrowserRouter>
