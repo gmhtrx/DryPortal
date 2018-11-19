@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const passport = require("passport");
 const settings = require("../../config/settings");
-require("../../config/passport");
+require("../../config/passport")(passport);
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
@@ -10,9 +10,11 @@ const User = require("../../models/user");
 
 //post to register
 router.post("/register", function(req,res) {
+    console.log(req.body);
     if (!req.body.username || !req.body.password) {
         res.json({success: false, msg: "Please enter username and password"});
     } else {
+        console.log("~~~~~~~~registering~~~~~~~~~");
         const newUser = new User({
             username: req.body.username,
             password: req.body.password,
