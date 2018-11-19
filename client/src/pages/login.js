@@ -34,6 +34,12 @@ class Login extends Component {
                             name="password"
                             placeholder="Password"
                         />
+                        <FormBtn
+                            disabled={!(this.state.username && this.state.password)}
+                            onClick={this.handleFormSubmit}
+                        >
+                            Login
+                        </FormBtn>
                     </Col>
                 </Row>
             </Container>
