@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Col, Container, Row } from "../components/Grid"
 import { FormBtn, Input, } from "../components/Form"
+import Navigation from "../components/navigation"
+
 import API from "../utils/API";
 
 class Signup extends Component {
@@ -35,6 +37,12 @@ class Signup extends Component {
     return (
 
       <Container>
+        <Navigation
+         logininhref="/login"
+         signuphref="/signup"
+         login="Login"
+         signup="Sign up"
+        />
         <Row>
           <Col size="md-6">
             <Input
