@@ -2,14 +2,18 @@ import axios from "axios";
 
 export default {
  
-  postUser: function(userData) {
+  signupUser: function(userData) {
     console.log("USER DATA");
     console.log(userData)
     return axios.post("/api/auth/register", userData);
   },
 
-  getUser: function(id) {
-    return axios.get("/api/auth/" + id);
+  loginUser: function(userData) {
+    return axios.post("/api/auth/login", userData);
+  },
+
+  getMessage: function() {
+    return axios.get("/api/items");
   },
 
   deleteOrder: function(id) {
