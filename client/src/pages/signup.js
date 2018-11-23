@@ -27,7 +27,7 @@ class Signup extends Component {
         password: this.state.password
       }
       console.log(userData)
-      API.postUser(userData)
+      API.signupUser(userData)
         .then(console.log("~~~~~~~~~~~~"))
         .catch(err => console.log(err));
     }
