@@ -9,7 +9,9 @@ class Createorder extends Component {
 
           <Container>
             <Row>
-              <Col size="md-6"></Col>
+              <Col size="md-6">
+                <h2>Helloworld</h2>
+              </Col>
             </Row>
           </Container>
 

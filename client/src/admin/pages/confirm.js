@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Col, Container, Row } from "../components/Grid"
-import { FormBtn, Input, } from "../components/Form"
+// import { Col, Container, Row } from "../components/Grid"
+// import { FormBtn, Input, } from "../components/Form"
 
 class confirm extends Component {
 

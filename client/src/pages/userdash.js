@@ -2,17 +2,21 @@ import React, { Component } from "react";
 import {Col, Container, Row} from "../components/Grid"
 import Navigation from "../components/navigation"
 
-class Home extends Component {
-
+class Userdash extends Component {
 
   render() {
     return (
-        
+
           <Container>
-            <Navigation/>
+              <Navigation
+               logininhref="/dashboard"
+               signuphref="/logout"
+               login="Dashboard"
+               signup="Logout"
+              />
             <Row>
               <Col size="md-6">
-              Hello
+                <h2>Helloworld</h2>
               </Col>
             </Row>
           </Container>
@@ -21,4 +25,4 @@ class Home extends Component {
   }
 };
 
-export default Home;
+export default Userdash;
