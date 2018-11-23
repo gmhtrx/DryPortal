@@ -1,8 +1,16 @@
-import React from "react";
+import React, { Component } from 'react';
+import Map from "./mapLayout"
 
-export const Input = props => (
-  <div className="form-group row">
-    <label>{props.children}</label>
-    <input className="form-control row" {...props} />
-  </div>
-);
+class Place extends Component {
+  render() {
+    return (
+      <div className="Map">
+        <header className="Map-header">
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <Map/>
+      </div>
+    );
+  }
+}
+export default Place;

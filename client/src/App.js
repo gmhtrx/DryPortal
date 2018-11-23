@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import confirm from "./admin/pages/confirm";
-import Maps from "./admin/pages/map";
+import Map from "./admin/maps";
 import Customer from "./admin/customer"
 import Home from "./pages/home";
 import Login from "./pages/login";
@@ -20,7 +20,7 @@ const App = () => (
         <Route exact path="/createorder" component={Createorder} />
         <Route exact path="/dashboard" component={Userdash} />
         <Route exact path="/customer" component={Customer} />
-        <Route exact path="/map" component={Maps} />
+        <Route exact path="/map" component={Map} />
         <Route exact path="/confirm" component={confirm} />
       </Switch>
     </div>
