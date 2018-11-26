@@ -9,7 +9,11 @@ class Home extends Component {
     return (
         
           <Container>
-            <Navigation/>
+            <Navigation
+              logininhref="/login"
+              signuphref="/signup"
+              login="Login"
+              signup="Sign up"/>
             <Row>
               <Col size="md-6">
               Hello

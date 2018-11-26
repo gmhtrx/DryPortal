@@ -17,10 +17,10 @@ export const Navigation = props => (
             <NavbarBrand href="/"><img src={hanger} alt="logo" style={{ width: 50, height: 27, cursor: 'pointer' }}/> DRY Portal</NavbarBrand>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href={props.logininhref}><Button outline color="secondary">{props.login}</Button>{'Login'}</NavLink>
+                  <NavLink href={props.logininhref}><Button outline color="secondary">{props.login}</Button>{''}</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href={props.signuphref}><Button outline color="secondary">{props.signup}</Button>{'Sign Up'}</NavLink>
+                  <NavLink href={props.signuphref}><Button outline color="secondary">{props.signup}</Button>{''}</NavLink>
                 </NavItem>
               </Nav>
           </Container>
