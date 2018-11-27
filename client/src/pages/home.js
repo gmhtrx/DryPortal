@@ -15,6 +15,7 @@ class Home extends Component {
           </Col>          
         </Row>
         
+
         <Row>
           <Col size="md-6">
           About Us
@@ -22,6 +23,7 @@ class Home extends Component {
         </Row>
 
       </Container>
+
 
     );
   }
