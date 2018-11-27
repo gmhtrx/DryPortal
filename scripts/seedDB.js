@@ -12,46 +12,57 @@ const itemSeed = [
   {
     name: "Dress shirts",
     price: 6,
+    image: "/itempics/shirts.jpg"
   },
   {
-    name: "pants",
-    price: 6
+    name: "Pants",
+    price: 6,
+    image: "/itempics/pants.jpg"
   },
   {
     name: "Dress",
-    price: 12
+    price: 12,
+    image: "/itempics/dress.jpg"
   },
   {
     name: "Jackets",
-    price: 6
+    price: 6,
+    image: "/itempics/jacket.jpg"
   },
   {
     name: "Coat",
-    price: 18
+    price: 18,
+    image: "/itempics/coat.jpg"
   },
   {
-    name: "Two piece coat",
-    price: 12
+    name: "Two Piece Suits",
+    price: 12,
+    image: "/itempics/suits.jpg"
   },
   {
     name: "Blouse",
-    price: 6
+    price: 6,
+    image: "/itempics/blouse.jpg"
   },
   {
     name: "Sweater",
-    price: 6
+    price: 6,
+    image: "/itempics/sweater.jpg"
   },
   {
     name: "Tie",
-    price: 6
+    price: 6,
+    image: "/itempics/tie.jpg"
   },
   {
     name: "Scarf",
-    price: 6
+    price: 6,
+    image: "/itempics/scarf.jpg"
   }, 
   {
     name: "Gloves",
-    price: 5
+    price: 5,
+    image: "/itempics/gloves.jpg"
   }
 ];
 

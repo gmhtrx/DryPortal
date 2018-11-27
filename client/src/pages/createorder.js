@@ -50,6 +50,7 @@ class Createorder extends Component {
             items.map( item => 
               <ItemList
               items={ item }
+              image={item.image}
               addToCart={addToCart}
               removeFromCart={removeFromCart}
               cartItem={cart.filter(cartItem => cartItem.id === item.id)[0]}

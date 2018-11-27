@@ -7,11 +7,12 @@ const app = express();
 const bodyParser = require("body-parser");
 const logger = require("morgan")
 
-
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+
 
 app.use(logger('dev'));
 
@@ -21,6 +22,11 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 // Send every request to the React app
 // Define any API routes before this runs
+var dir = path.join(__dirname, '/public/images');
+
+app.use(express.static(dir));
+
+
 app.use(routes);
 
 
