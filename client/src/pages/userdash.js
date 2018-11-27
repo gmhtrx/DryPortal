@@ -33,29 +33,14 @@ class Userdash extends Component {
 
     render() {
         return (
-
-            <Container idName="main">
-                <Nav tabs>
-                    <NavItem>
-                        <NavLink href="#">Create Order</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="#">Track</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="#">Account</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink disabled href="#">Cart: (0)</NavLink>
-                    </NavItem>
-                </Nav>
                 <Row>
                     <Col size="md-6">
 
                         {Auth.isUserAuthenticated() ? (
 
                             <div className="top-bar-right">
-                                Log out
+                                <h4>Welcome!</h4>
+                                <p>Create order to get started</p>
                             </div>
                         ) : (
                                 <div className="top-bar-right">
@@ -64,8 +49,6 @@ class Userdash extends Component {
                             )}
                     </Col>
                 </Row>
-            </Container>
-
         );
     }
 };

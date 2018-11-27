@@ -2,20 +2,19 @@ import React from "react";
 import AddBtn from "./AddBtn";
 import RemoveBtn from "./RemoveBtn";
 
-export const ItemList = props => (
+const ItemList = props => (
 <div className='product-list-item'>
-    {console.log(props.items.name)}
-    <h3>{ props.items.name }</h3>
+    <h3>{ props.item.name }</h3>
     <img
       height={100}
-      title={ props.items.name }
-      src={props.items.image}
+      title={ props.item.name }
+      src={props.item.image}
     />
-    <div>${ props.items.price }</div>
+    <div>${ props.item.price }</div>
     <div>
       <AddBtn
         cartItem={props.cartItem}
-        item={props.items}
+        item={props.item}
         addToCart={props.addToCart}
       />
 
@@ -23,7 +22,7 @@ export const ItemList = props => (
         props.cartItem
           ? <RemoveBtn
             cartItem={props.cartItem}
-            item={props.items}
+            item={props.item}
             removeFromCart={props.removeFromCart}
           />
           : null
@@ -33,3 +32,4 @@ export const ItemList = props => (
   </div>
   );
   
+  export default ItemList;
