@@ -15,6 +15,7 @@ const App = () => (
 
   <BrowserRouter>
     <div>
+      <Navigation />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
