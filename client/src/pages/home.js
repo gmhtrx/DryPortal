@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Col, Container, Row } from "../components/Grid"
-import Navigation from "../components/navigation"
 
 class Home extends Component {
 

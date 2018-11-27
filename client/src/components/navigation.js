@@ -14,7 +14,7 @@ import Auth from "../modules/auth";
 export const Navigation = props => (
 
   <Navbar color="white" light expand="md">
-    <Container >
+    <Container id="m" >
       <NavbarBrand href="/"><img src={hanger} alt="logo" style={{ width: 50, height: 27, cursor: 'pointer' }} /> DRY Portal</NavbarBrand>
       <Nav className="ml-auto" navbar>
 
