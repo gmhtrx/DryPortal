@@ -27,7 +27,7 @@ class Signup extends Component {
         password: this.state.password
       }
       console.log(userData)
-      API.postUser(userData)
+      API.signupUser(userData)
         .then(console.log("~~~~~~~~~~~~"))
         .catch(err => console.log(err));
     }
@@ -37,12 +37,6 @@ class Signup extends Component {
     return (
 
       <Container>
-        <Navigation
-         logininhref="/login"
-         signuphref="/signup"
-         login="Login"
-         signup="Sign up"
-        />
         <Row>
           <Col size="md-6">
             <Input

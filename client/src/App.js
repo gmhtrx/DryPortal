@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import confirm from "./admin/pages/confirm";
 import Map from "./admin/maps";
 import Customer from "./admin/customer"
+import Navigation from "./components/navigation"
 import Home from "./pages/home";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
@@ -11,6 +12,7 @@ import Userdash from "./pages/userdash";
 
 
 const App = () => (
+
   <BrowserRouter>
     <div>
       <Switch>
